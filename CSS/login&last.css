@@ -1,0 +1,105 @@
+@font-face {
+    font-family: 'Futuristic Armour';
+    /* src: url('Fonts/Futuristic Armour.otf'); */
+    src: url('/Fonts/Futuristic\ Armour.otf');
+}
+
+
+
+body {
+    margin: 0;
+}
+
+.background {
+    position: fixed;
+    background: url(/Media/login.png);
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1
+}
+
+.background-last {
+    position: relative;
+    background: url(/Media/game-over.png);
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1
+}
+
+.main-container {
+    font-family: 'Futuristic Armour';
+    width: 100%;
+    min-height: 100vh;
+    height: 100%;
+}
+
+.title {
+    color: white;
+    font-size: 5rem;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.last-message {
+    position: fixed;
+    left: 25%;
+    top: 20%;
+    bottom: 20%;
+    right: 25%;
+    padding: 2em;
+    text-align: center;
+    font-size: 55px;
+}
+
+.login {
+    position: fixed;
+    left: 29%;
+    top: 30%;
+    bottom: 25%;
+    right: 31%;
+    min-width: 40vh;
+    padding: 1em;
+    text-align: center;
+    font-size: 55px;
+}
+
+input {
+    border: hidden;
+    height: 20%;
+    width: 92%;
+    font-size: 26px;
+}
+
+button {
+    font-size: 1rem;
+    border-radius: 9px;
+}
+
+.content {
+    padding-top: 5%;
+    width: 70%;
+    margin-left: 15%;
+    min-height: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+}
+
+.description {
+    font-family: 'Futuristic Armour';
+    font-size: 2rem;
+}
+
+
+
