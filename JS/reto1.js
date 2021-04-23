@@ -6,7 +6,8 @@ boton.addEventListener('click', function() {
 
     ans = ans.toLowerCase();
     if(ans === "historia del tiempo") {
-        veredicto.innerHTML = "Entrando a la base de datos";
+        veredicto.innerHTML = "Entrando a la base de datos" + "<br>";
+        veredicto.innerHTML += '<a href="reto2.html"/><button>Siguiente</button></a>'; 
     }
     else {
         veredicto.innerHTML = "¿Eres un intruso?";

@@ -5,13 +5,13 @@ boton.addEventListener('click', function() {
     let veredicto = document.getElementById("veredicto");
 
     ans = ans.toLowerCase();
-    if(ans === "lnsd") {
-        veredicto.innerHTML = "Secuencia correcta, decodificacion en proceso";
+    if(ans === "historia del tiempo") {
+        veredicto.innerHTML = "Respuesta correcta." + "<br>";
+        veredicto.innerHTML += '<a href="reto3.html"/><button>Siguiente</button></a>';
     }
     else {
-        veredicto.innerHTML = "Error, acceso denegado";
+        veredicto.innerHTML = "Incorrecto";
     }
     
     console.log(ans);
-
 });

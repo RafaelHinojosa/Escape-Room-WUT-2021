@@ -7,7 +7,7 @@ boton.addEventListener('click', function() {
     let veredicto = document.getElementById("veredicto");
 
     if(user === "3251" && password === "hola") {
-        veredicto.innerHTML = '<a href="last.html"/><button>Siguiente</button></a>';
+        veredicto.innerHTML = '<a href="reto1.html"/><button>Siguiente</button></a>';
     }
     else {
         veredicto.innerHTML = "Incorrecto";

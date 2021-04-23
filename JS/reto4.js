@@ -5,11 +5,12 @@ boton.addEventListener('click', function() {
     let veredicto = document.getElementById("veredicto");
 
     ans = ans.toLowerCase();
-    if(ans === "historia del tiempo") {
-        veredicto.innerHTML = "Respuesta correcta.";
+    if(ans === "lnsd") {
+        veredicto.innerHTML = "Secuencia correcta, decodificacion en proceso" + "<br>";
+        veredicto.innerHTML += '<a href="final.html"><button>Siguiente</button></a>';
     }
     else {
-        veredicto.innerHTML = "Incorrecto";
+        veredicto.innerHTML = "Error, acceso denegado";
     }
     
     console.log(ans);
