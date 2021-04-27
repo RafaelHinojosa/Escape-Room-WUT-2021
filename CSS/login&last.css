@@ -27,6 +27,7 @@ body {
     width: 100%;
     height: 100%;
     background-size: cover;
+    z-index: -1;
 }
 
 .background-last {
@@ -93,18 +94,23 @@ body {
     height: 474px;
 }
 
-.login-form-input {
-    width: 100%;
-    height: 100%;
+.login-form-input1 {
+    position: absolute;
+    left: 63px;
+    top: 260px;
+}
 
-    z-index: 1;
+.login-form-input2 {
+    position: absolute;
+    left: 63px;
+    top: 360px;
 }
 
 input {
     border: hidden;
-    height: 20%;
-    width: 92%;
-    font-size: 26px;
+    font-size: 20px;
+    height: 38px;
+    width: 391px;
 }
 
 button {
