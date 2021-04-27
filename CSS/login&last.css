@@ -142,9 +142,18 @@ button {
     align-content: center;
 }
 
+.login-error {
+    position: absolute;
+    top: 440px;
+    left: 160px;
+    text-align: center;
+}
+
 .description {
     font-family: 'Futuristic Armour';
-    font-size: 2rem;
+    font-size: 20px;
+    color: rgb(49, 27, 27);
+    font-weight: bold;
 }
 
 
