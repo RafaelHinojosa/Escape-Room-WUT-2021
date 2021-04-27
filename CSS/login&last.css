@@ -12,13 +12,21 @@ body {
 
 .background {
     position: fixed;
-    background: url(/Media/login.png);
+    background: url(/Media/fondo-login.png);
     width: 100%;
     height: 100%;
     min-height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
     z-index: -1
+}
+
+.background-login-form {
+    position: absolute;
+    background: url(/Media/login-form.png);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
 }
 
 .background-last {
@@ -68,6 +76,28 @@ body {
     padding: 1em;
     text-align: center;
     font-size: 55px;
+}
+
+.login-form {
+    position: absolute;
+    left: 25%;
+    top: 10%;
+    bottom: 30%;
+    right: 30%;
+
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+
+    width: 538px;
+    height: 474px;
+}
+
+.login-form-input {
+    width: 100%;
+    height: 100%;
+
+    z-index: 1;
 }
 
 input {
