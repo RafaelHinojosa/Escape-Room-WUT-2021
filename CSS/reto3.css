@@ -24,7 +24,6 @@ body {
     width: 100%;
     height: 100%;
     background-size: cover;
-   
 }
 
 .reto3-container {
@@ -38,12 +37,13 @@ body {
 }
 
 .content {
-    position: relative;
+    position: absolute;
     justify-content: center;
     text-align: center;
-    margin-top: 255;
-    margin-left: 85;
-    margin-right: 45;
+
+    left: 100px;
+    top: 170px;
+
     width: 80%;
     padding: 1rem;
     font-size: 45px;

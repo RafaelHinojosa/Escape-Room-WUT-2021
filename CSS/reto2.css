@@ -40,12 +40,12 @@ body {
 }
 
 .content {
-    position: relative;
+    position: absolute;
     justify-content: center;
     text-align: justify;
-    margin-top: 180;
-    margin-left: 15;
-    margin-right: 45;
+    
+    top: 160px;
+
     width: 40%;
     padding: 1rem;
     font-size: 25px;
