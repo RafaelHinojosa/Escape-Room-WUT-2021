@@ -20,3 +20,12 @@ exports.postLogin = (request, response, next) => {
         response.redirect('/agentes/login');
     }
 }
+
+exports.getReto1 = (request, response, next) => {
+    response.render('reto1');
+};
+
+exports.postReto1 = (request, response, next) => {
+    response.render('reto1');
+};
+

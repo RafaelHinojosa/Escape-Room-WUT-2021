@@ -22,6 +22,11 @@ router.get('/login', rutas.getLogin);
 
 router.post('/login', rutas.postLogin);
 
+router.get('/reto1', rutas.getReto1);
+
+router.post('/reto1', rutas.postReto1);
+
+
 router.use(express.static(path.join(__dirname, '..', 'public')));
 
 module.exports = router;
