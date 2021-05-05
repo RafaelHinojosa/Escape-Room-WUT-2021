@@ -20,7 +20,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 // Rutas a utilizar
 app.use('/agentes', rutas);
 app.use((request, response, next) => {
-    response.status(400);
+    response.status(404);
     response.render('404', {
         titulo: '404 - Page Not Found'
     });
