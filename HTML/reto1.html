@@ -4,12 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/CSS/reto1.css">
+    <link rel="stylesheet" href="../CSS/reto1.css">
     <title>Reto 1</title>
 </head>
 <body>
     <div class="main-container">
         <div class="background"></div>
+        <div class="Bienvenido">
+            <div class="background-Bienvenido"></div>
+
         <div class="content">
             <p class="title">¿Sabias que?</p>
             <p class="description">
@@ -22,12 +25,19 @@
                 ¿Cuando estas ahora?
             </p>
             
-            <input type="text" id="respuesta">
-            <button id="boton">Verificar</button>
-            <p id="veredicto" class="description"></p> 
+            <div class="login-confirmar">
+                <input type="text" id="respuesta">
+                <br>
+            </div>
+            
+            <div class="login-boton" id="boton-siguiente">
+                <button id="boton">Verificar</button> 
+            </div>
+            
+            <div class="login-error description" id="veredicto">                 
+            </div>
         </div>
-    </div>
 
-    <script type="text/javascript" src="/JS/reto1.js"> </script>
+    <script type="text/javascript" src="../JS/reto1.js"> </script>
 </body>
 </html>
