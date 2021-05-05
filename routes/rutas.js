@@ -26,6 +26,19 @@ router.get('/reto1', rutas.getReto1);
 
 router.post('/reto1', rutas.postReto1);
 
+router.get('/reto2', rutas.getReto2);
+
+router.post('/reto2', rutas.postReto2);
+
+router.get('/reto3', rutas.getReto3);
+
+router.post('/reto3', rutas.postReto3);
+
+router.get('/reto4', rutas.getReto4);
+
+router.post('/reto4', rutas.postReto4);
+
+router.get('/final', rutas.getFinal);
 
 router.use(express.static(path.join(__dirname, '..', 'public')));
 

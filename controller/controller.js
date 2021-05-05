@@ -29,3 +29,30 @@ exports.postReto1 = (request, response, next) => {
     response.render('reto1');
 };
 
+exports.getReto2 = (request, response, next) => {
+    response.render('reto2');
+};
+
+exports.postReto2 = (request, response, next) => {
+    response.render('reto2');
+};
+
+exports.getReto3 = (request, response, next) => {
+    response.render('reto3');
+};
+
+exports.postReto3 = (request, response, next) => {
+    response.render('reto3');
+};
+
+exports.getReto4 = (request, response, next) => {
+    response.render('reto4');
+};
+
+exports.postReto4 = (request, response, next) => {
+    response.render('reto4');
+};
+
+exports.getFinal = (request, response, next) => {
+    response.render('final');
+};
