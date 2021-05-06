@@ -39,7 +39,22 @@ exports.getReto2 = (request, response, next) => {
 };
 
 exports.postReto2 = (request, response, next) => {
-    response.render('reto2');
+    let accion = request.body.nombreBoton;
+
+    if(accion === 'Siguiente') {
+        response.redirect('/agentes/reto3');
+    }
+    else if(accion === 'Verificar') {
+        let ans = request.body.ans; 
+        
+        if(ans === "070521") {
+            request.session.acceso = 3;
+            response.status(200).json({veredicto: 'Correcto'});
+        }
+        else {
+            response.status(200).json({veredicto: 'Incorrecto'});
+        }
+    }
 };
 
 exports.getReto3 = (request, response, next) => {
