@@ -3,21 +3,29 @@
 const bcrypt = require('bcryptjs');
 
 exports.getLogin = (request, response, next) => {
-    response.render('index');
+    response.render('index', {
+        nombreBoton: 'Verificar', 
+        veredicto: ''
+    });
 };
 
 exports.postLogin = (request, response, next) => {
-    let user = request.body.username; 
-    let password = request.body.password;
+    let accion = request.body.nombreBoton;
 
-    if(user === "3251" && password === "hola") {
-        console.log('Siu');
-        request.session.acceso = 1;
-        console.log(request.session.acceso);
+    if(accion === 'Siguiente') {
+        response.redirect('/agentes/reto1');
     }
-    else {
-        console.log('Intruso detectado');
-        response.redirect('/agentes/login');
+    else if(accion === 'Verificar') {
+        let user = request.body.user; 
+        let password = request.body.password;
+        
+        if(user === "3251" && password === "hola") {
+            request.session.acceso = 1;
+            response.status(200).json({veredicto: 'Correcto'});
+        }
+        else {
+            response.status(200).json({veredicto: 'Incorrecto'});
+        }
     }
 }
 

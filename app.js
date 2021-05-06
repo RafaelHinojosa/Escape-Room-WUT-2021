@@ -10,9 +10,17 @@ app.set('views', 'views');
 
 // Body-Parser
 app.use(bodyParser.urlencoded({extended: false}));
+app.use(bodyParser.json());
 
 // Acceder a archivos de la carpeta Public
 app.use(express.static(path.join(__dirname, 'public')));
+
+const session = require('express-session');
+app.use(session({
+    secret: 'ajsubonsidnbpq293$!20', 
+    resave: false,
+    saveUninitialized: false,
+}));
 
 // Rutas para acceder a la carpeta de rutas
 const rutas = require('./routes/rutas');
