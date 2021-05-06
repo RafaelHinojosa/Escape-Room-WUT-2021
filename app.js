@@ -24,6 +24,7 @@ app.use(session({
 
 // Rutas para acceder a la carpeta de rutas
 const rutas = require('./routes/rutas');
+const { request } = require('express');
 
 // Rutas a utilizar
 app.use('/agentes', rutas);

@@ -1,8 +1,11 @@
 // Aqui iran todos los gets, posts
 
-const bcrypt = require('bcryptjs');
+exports.getIntruso = (request, response, next) => {
+    response.render('intruso');
+};
 
 exports.getLogin = (request, response, next) => {
+    request.session.acceso = 0;
     response.render('index');
 };
 
