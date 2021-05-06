@@ -62,7 +62,25 @@ exports.getReto3 = (request, response, next) => {
 };
 
 exports.postReto3 = (request, response, next) => {
-    response.render('reto3');
+    let accion = request.body.nombreBoton;
+
+    if(accion === 'Siguiente') {
+        response.redirect('/agentes/reto4');
+    }
+    else if(accion === 'Verificar') {
+        let ans = request.body.ans; 
+        
+        if(ans === "2348") {
+            response.status(200).json({veredicto: 'UnPasoMas'});
+        }
+        else if(ans === "2349") {
+            request.session.acceso = 4;
+            response.status(200).json({veredicto: 'Correcto'});
+        }
+        else {
+            response.status(200).json({veredicto: 'Incorrecto'});
+        }
+    }
 };
 
 exports.getReto4 = (request, response, next) => {
