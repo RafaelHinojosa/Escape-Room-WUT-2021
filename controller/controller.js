@@ -3,10 +3,7 @@
 const bcrypt = require('bcryptjs');
 
 exports.getLogin = (request, response, next) => {
-    response.render('index', {
-        nombreBoton: 'Verificar', 
-        veredicto: ''
-    });
+    response.render('index');
 };
 
 exports.postLogin = (request, response, next) => {

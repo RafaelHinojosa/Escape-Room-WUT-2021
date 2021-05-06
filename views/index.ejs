@@ -26,7 +26,7 @@
         
             <!-- Botón de Confirmar -->
             <div class="login-confirmar" id='tipo-boton'>
-                <button id="boton" name="<%= nombreBoton %>" onclick="checkAnswer()">Verificar</button>
+                <button id="boton" onclick="checkAnswer()">Verificar</button>
             </div>
             
             <!-- este div loponermos para cuando queramos escribir que hay un error ! -->
@@ -39,9 +39,8 @@
     function checkAnswer() {
         let user = document.getElementById('user').value;
         let password = document.getElementById('password').value;
-        let nombreBoton = document.getElementById('boton').name;
 
-        let data = {user: user, password: password, nombreBoton: nombreBoton};
+        let data = {user: user, password: password, nombreBoton: 'Verificar'};
         
         fetch('/agentes/login', {
             method: 'POST',
