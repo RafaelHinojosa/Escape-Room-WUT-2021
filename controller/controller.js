@@ -88,7 +88,22 @@ exports.getReto4 = (request, response, next) => {
 };
 
 exports.postReto4 = (request, response, next) => {
-    response.render('reto4');
+    let accion = request.body.nombreBoton;
+
+    if(accion === 'Siguiente') {
+        response.redirect('/agentes/final');
+    }
+    else if(accion === 'Verificar') {
+        let ans = request.body.ans; 
+        
+        if(ans === "lnsd") {
+            request.session.acceso = 5;
+            response.status(200).json({veredicto: 'Correcto'});
+        }
+        else {
+            response.status(200).json({veredicto: 'Incorrecto'});
+        }
+    }
 };
 
 exports.getFinal = (request, response, next) => {

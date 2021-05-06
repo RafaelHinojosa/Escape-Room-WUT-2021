@@ -58,7 +58,6 @@
             return result.json();
         })
         .then(data => {
-            console.log(data);
             if(data.veredicto === 'Correcto') {
                 let html = '';
                 html += '<form action="/agentes/reto2" method="POST">';

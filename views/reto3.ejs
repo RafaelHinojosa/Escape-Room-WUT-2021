@@ -50,10 +50,9 @@
             return result.json();
         })
         .then(data => {
-            console.log(data);
             if(data.veredicto === 'Correcto') {
                 let html = '';
-                html += '<form action="/agentes/reto4" method="POST">';
+                html += '<form action="/agentes/reto3" method="POST">';
                 html += '<input type="hidden" name="nombreBoton" value="Siguiente">';
                 html += '<button id="boton" type="submit">Siguiente</button>';
                 html += '</form>';   
