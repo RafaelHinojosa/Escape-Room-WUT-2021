@@ -4,6 +4,11 @@
     src: url('../Fonts/Futuristic\ Armour.otf');
 }
 
+@font-face {
+    font-family: 'Blanka-Regular';
+    src: url('../Fonts/Blanka-Regular.otf');
+}
+
 body {
     margin: 0;
 }
@@ -63,6 +68,8 @@ body {
 }
 
 .last-message-title {
+    font-family: 'Blanka-Regular';
+    color: rgb(40, 21, 124);
     position: relative;
     justify-content: center;
     text-align: center;

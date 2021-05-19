@@ -19,7 +19,7 @@ exports.postLogin = (request, response, next) => {
         let user = request.body.user; 
         let password = request.body.password;
         
-        if(user === "3251" && password === "hola") {
+        if(user === "3251" && password === "Trust%2047!") {
             request.session.acceso = 1;
             response.status(200).json({veredicto: 'Correcto'});
         }
