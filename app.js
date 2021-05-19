@@ -24,10 +24,13 @@ app.use(session({
 
 // Rutas para acceder a la carpeta de rutas
 const rutas = require('./routes/rutas');
-const { request } = require('express');
+const { request, response } = require('express');
 
 // Rutas a utilizar
 app.use('/agentes', rutas);
+app.use('/', (request, response, redirect) => {
+    response.redirect('/agentes/login');
+});
 app.use((request, response, next) => {
     app.use(express.static(path.join(__dirname, '..', 'public')));
 
