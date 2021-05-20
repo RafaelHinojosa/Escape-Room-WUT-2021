@@ -34,6 +34,8 @@ router.post('/reto4', isAuth4, rutas.postReto4);
 
 router.get('/final', isAuth5, rutas.getFinal);
 
+router.get('/', rutas.get404);
+
 router.use(express.static(path.join(__dirname, '..', 'public')));
 
 module.exports = router;

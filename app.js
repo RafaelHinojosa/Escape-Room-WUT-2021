@@ -31,11 +31,6 @@ app.use('/agentes', rutas);
 app.use('/', (request, response, redirect) => {
     response.redirect('/agentes/login');
 });
-app.use((request, response, next) => {
-    app.use(express.static(path.join(__dirname, '..', 'public')));
 
-    response.status(404);
-    response.render('404');
-});
-
-app.listen(3000);
+app.listen(process.env.PORT);
+// app.listen(3000);

@@ -42,7 +42,6 @@
 <script>
     function checkAnswer() {
         let respuesta = document.getElementById('respuesta').value;
-
         let data = {ans: respuesta, nombreBoton: 'Verificar'};
         
         fetch('/agentes/reto1', {
